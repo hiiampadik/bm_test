@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://bronislavmusil.com
+
+# Sitemaps
+Sitemap: https://bronislavmusil.com/sitemap.xml

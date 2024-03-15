@@ -1,0 +1,67 @@
+@import '../../../styles/variables';
+
+
+.marqueeContactContainer{
+  margin-bottom: $padding;
+
+  @media only screen and (max-width: $breakpoint-largetablet-max) {
+    display: none !important;
+  }
+
+  .marqueeContactInner{
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    width: 665px;
+
+    .fillFirst, .fillLast{
+      flex: 1 1 auto;
+    }
+
+
+    .marqueeContactBlock{
+      background-color: black;
+      color: white;
+      border-radius: $radius3;
+      height: $radius3 * 2;
+      padding: 0 15px 0 15px;
+      line-height: $radius3 * 2;
+      position: relative;
+      font-family: ibm-plex-mono, monospace;
+      font-size: 14px;
+      transition: 0.4s ease;
+      text-align: center;
+      cursor: pointer;
+
+      //font-family: ibm-plex-mono, monospace;
+      //font-weight: bold;
+      //font-size: 14px;
+
+    }
+
+    @media (hover: hover) {
+      .marqueeContactBlock:hover{
+        padding: 0 35px;
+        border-radius: 3px;
+      }
+    }
+  }
+}
+
+.marqueeNameContainer{
+  position: relative;
+  margin-bottom: $padding;
+
+  @media only screen and (max-width: $breakpoint-largetablet-max) {
+    display: none;
+  }
+}
+
+.marqueeName{
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}

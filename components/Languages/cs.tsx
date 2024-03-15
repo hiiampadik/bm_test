@@ -1,0 +1,30 @@
+export default {
+     about: 'O mně',
+     projects: 'Projekty',
+     languageSwitch: 'En',
+     download: 'Ke Stažení',
+
+     Arduino: 'Arduino',
+     InteractiveInstalation: 'Interaktivní Instalace',
+     wZkratCol: 'w/ Zkrat Col.',
+     wTheRodina: 'w/ The Rodina',
+     Programming: 'Programování',
+     GraphicDesign: 'Grafický Design',
+     Print: 'Tisk',
+     VisualIdentity: 'Vizuální Identita',
+     GenerativeDesign: 'Generativní Design',
+     Processing: 'Processing',
+     VJing: "VJing",
+     Web: 'Web',
+     Webdesign: "Webdesign",
+     Frontend: "Front-end",
+     Concept: 'Koncept',
+
+     Client: "Klient",
+     Photographer: "Fotograf",
+     Collaboration: "Spolupráce",
+     Back: "ZPĚT",
+     Filter: 'Filtr',
+
+     Touch: 'Kontakt',
+};

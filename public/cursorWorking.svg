@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Vrstva_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{font-family:'PPFormula-CondensedRegular';}
+	.st2{font-size:22.182px;}
+</style>
+<g>
+	<path class="st0" d="M15.1,51.9c-1.8,0-3.3-1.5-3.3-3.3V4.2c0-1.8,1.5-3.3,3.3-3.3h69.8c1.8,0,3.3,1.5,3.3,3.3v44.3
+		c0,1.8-1.5,3.3-3.3,3.3H15.1z"/>
+	<path d="M84.9,1.7c1.4,0,2.5,1.1,2.5,2.5v44.3c0,1.4-1.1,2.5-2.5,2.5H15.1c-1.4,0-2.5-1.1-2.5-2.5V4.2c0-1.4,1.1-2.5,2.5-2.5H84.9
+		 M84.9,0H15.1c-2.3,0-4.2,1.9-4.2,4.2v44.3c0,2.3,1.9,4.2,4.2,4.2h69.8c2.3,0,4.2-1.9,4.2-4.2V4.2C89.1,1.9,87.2,0,84.9,0L84.9,0z"
+		/>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 20.4877 24.1001)" class="st1 st2">Mo - Fri</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 27.1196 45.3625)" class="st1 st2">9 - 18</text>
+</g>
+</svg>

@@ -1,0 +1,57 @@
+@import "../../styles/_variables.scss";
+
+.galleryContainer{
+  margin: $padding;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  img{
+    object-fit: contain;
+    object-position: left top;
+    max-height: calc(100vh - $padding * 2);
+  }
+  @media only screen and (max-width: $breakpoint-largetablet-max) {
+    height: 80dvh;
+    img{
+      max-height: calc(80vh - $padding * 2);
+    }
+  }
+}
+
+.prevButton{
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.nextButton{
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.pagination {
+  position: absolute;
+  bottom: $padding * 3;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: white;
+  border-radius: $radius3;
+  height: $radius3 * 2;
+  padding: 0 15px 0 15px;
+  line-height: $radius3 * 2;
+  font-family: ibm-plex-mono, monospace;
+  font-size: 14px;
+  text-align: center;
+  //background-color: black;
+}

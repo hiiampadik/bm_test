@@ -1,0 +1,32 @@
+@import '../styles/variables';
+
+
+.rightContainer{
+  margin-left: 50vw;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-left: 1px black solid;
+
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-name: appear;
+
+  @media only screen and (max-width: $breakpoint-largetablet-max) {
+    margin-left: 0;
+    border-left: none;
+    padding-top: 200px;
+  }
+}
+
+
+@keyframes appear {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1;
+  }
+}

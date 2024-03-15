@@ -1,0 +1,162 @@
+@import '../../styles/variables';
+
+.projectContent{
+  flex: 0 0 50vw;
+  padding: $padding * 2;
+  background-color: white;
+
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-name: appear;
+
+  @media only screen and (min-width: $breakpoint-smallscreen-min) {
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 100dvh;
+    position: fixed;
+    z-index: 10;
+  }
+  @media only screen and (max-width: $breakpoint-largetablet-max) {
+    padding-bottom: 5vh;
+  }
+
+  .projectTitleContainer{
+    margin-top: 100px;
+    h1 {
+      font-size: 38px;
+      margin-bottom: 20px;
+
+    }
+    p{
+      font-size: 16px;
+      max-width: 400px;
+      line-height: 1.2;
+      font-weight: 400;
+    }
+  }
+
+  .projectTags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    border-bottom: 1px black solid;
+    width: 100%;
+    padding-bottom: $padding*1.5;
+    margin-bottom: $padding*1.5;
+  }
+
+  .projectInfoContainer{
+    width: 100%;
+    border-bottom: 1px black solid;
+    padding-bottom: $padding*1.5;
+    margin-bottom:  $padding*1.5;
+    font-family: ibm-plex-mono, monospace;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    .info{
+      display: grid;
+      grid-template-columns: 130px auto;
+
+      h2, p {
+        font-size: 14px;
+        margin: 0;
+      }
+      a {
+        text-decoration: underline;
+      }
+
+      @media (hover: hover) {
+        a:hover {
+          text-decoration: none;
+        }
+      }
+
+    }
+  }
+  .projectText{
+    max-width: 500px;
+    p{
+      margin-bottom: 1rem;
+    }
+    a {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 1.5px;
+    }
+
+    @media (hover: hover) {
+      a:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.projectGallery{
+  border-left: 1px black solid;
+  position: relative;
+  background-color: black;
+  overflow: hidden;
+
+  @media only screen and (min-width: $breakpoint-smallscreen-min) {
+    top: 0;
+    left: 50vw;
+    width: 50vw;
+    height: 100dvh;
+    position: fixed;
+    z-index: 10;
+  }
+
+  @media only screen and (max-width: $breakpoint-largetablet-max) {
+    height: 80dvh;
+  }
+
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-name: bottomAppear;
+}
+
+@keyframes bottomAppear {
+  from {
+    opacity: 0;
+    transform: translateY(5%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.projectVideos{
+  margin-bottom: 4px !important;
+}
+.projectVideos > div {
+  width: auto !important; // Reset width
+  height: auto !important;; // Reset height
+  padding-top: 56.25%;
+  position: relative;
+  //border-radius: $radius2;
+  overflow: hidden;
+}
+.projectVideos > div > div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
